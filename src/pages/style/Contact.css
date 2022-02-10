@@ -1,0 +1,111 @@
+.contact-section {
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 30px 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color) 60%,
+    var(--primary-color) 60%
+  );
+}
+.contact-section .content {
+  min-width: 300px;
+  width: 700px;
+  margin-bottom: 80px;
+  background-color: var(--quaternary-color);
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 55%);
+  animation: translate1 2s ease-out forwards;
+  animation-delay: 1s;
+}
+.content-text-contact {
+  min-width: 300px;
+  max-width: 500px;
+  padding: 10px 10px;
+  text-align: left;
+  margin: 50px auto 50px auto;
+}
+.content-text-contact div p {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--seventh-color);
+}
+.contact-section .content:nth-child(1) {
+  background-color: var(--sixth-color);
+}
+.content .contact-section .content:nth-child(1) h2,
+.contact-section .content:nth-child(1) h4,
+.content .content-text-form h2 {
+  font-size: 1.6rem;
+}
+.content .content-text-form h2 {
+  color: var(--sixth-color);
+}
+.content:nth-child(1) h3 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+.content .contact-section .content:nth-child(1) p {
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  margin: 4px 0;
+  color: var(--primary-color);
+}
+.form input {
+  display: block;
+  height: 40px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: none;
+  border-bottom: 1px solid var(--sixth-color);
+  color: var(--sixth-color);
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--sixth-color);
+  font-size: 0.9rem;
+}
+.form textarea {
+  resize: none;
+  height: 100px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--sixth-color);
+  color: var(--sixth-color);
+}
+.contact-section .content:nth-child(2) {
+  animation: translate2 2s ease-out forwards;
+  animation-delay: 1s;
+}
+.form .btn-form {
+  width: 200px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: none;
+  outline: none;
+  color: var(--fifth-color);
+  border: 1px solid var(--sixth-color);
+  cursor: pointer;
+  transition: 500ms all;
+}
+.form .btn-form:hover {
+  color: var(--sixth-color);
+  background-color: transparent;
+}

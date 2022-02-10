@@ -1,0 +1,49 @@
+.button-dark-mode {
+  position: absolute;
+  width: 140px;
+  height: 43px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--quaternary-color);
+  border: 3px solid var(--seventh-color);
+  border-radius: 20px;
+  z-index: 1000;
+  transform: translateX(1000%);
+  animation: delay 2s ease-in forwards;
+  animation-delay: 1s;
+}
+.button-dark-mode .fas {
+  padding: 8px 15px;
+  font-size: 1.8rem;
+  color: var(--quaternary-color);
+}
+.button-dark-mode .moon-mode {
+  z-index: 1000;
+}
+.button-mode {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.button-dark-mode .button-mode .white-focus-sun {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 20px 0 0 20px;
+  transition: 1s all ease-in-out;
+}
+.button-dark-mode .button-mode .white-focus-moon {
+  position: absolute;
+  margin: 0 0 0 67px;
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0 20px 20px 0;
+  transition: 1s all ease-in-out;
+}
+.button-dark-mode .sun-mode {
+  z-index: 1000;
+}

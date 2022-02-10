@@ -1,0 +1,102 @@
+.works-section {
+  min-width: 320px;
+  width: 100%;
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+}
+.works-content {
+  min-width: 320px;
+  padding: 10px;
+}
+.works-content > h3 {
+  padding: 60px 0 0 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #2e2e2e;
+  transform: translateX(-100%);
+  animation: delay 2s ease-in forwards;
+  animation-delay: 1s;
+}
+.works-content h2 {
+  transform: translateX(100%);
+  font-size: 2.4rem;
+  text-align: center;
+  color: var(--quaternary-color);
+  animation: delay 2s ease-in forwards;
+  animation-delay: 1s;
+}
+.works-content-card-img {
+  position: relative;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 65vh;
+  margin: 30px auto 150px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+  animation: delay 2s ease-in forwards;
+  animation-delay: 1s;
+}
+.works-content-card-img:nth-child(1) {
+  background-image: url(../../static/works/CALCULATOR.PNG);
+  transform: translateX(100%);
+}
+.works-content-card-img:nth-child(2) {
+  background-image: url(../../static/works/POKEMON.PNG);
+  transform: translateX(-100%);
+}
+.works-content-card-img:hover .effect-hover {
+  width: 60%;
+}
+.works-content-card-img:hover .number-card-works {
+  animation: number 800ms ease-in-out forwards;
+  animation-delay: 1s;
+}
+.works-content-card:hover {
+  transform: scale(1.1);
+}
+.effect-hover {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transition: 2s all ease-in-out;
+}
+.works-content-card .number-card-works {
+  position: absolute;
+  top: 0;
+  right: 25%;
+  opacity: 0;
+  font-size: 10rem;
+  color: var(--other-color);
+  transition: 4s all ease-in-out;
+}
+.works-content-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.295);
+  transition: 1s all ease-in-out;
+}
+.works-content-card > h3 {
+  color: var(--sixth-color);
+  padding: 175px 0 0 4rem;
+  font-size: 2rem;
+}
+.works-content-card p {
+  color: var(--sixth-color);
+  padding: 0 0 0 4rem;
+  font-size: 1.3rem;
+}
+.works-content-card a {
+  display: block;
+  width: 150px;
+  height: 45px;
+  margin: 20px 0 0 4rem;
+  padding: 13px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--quaternary-color);
+  color: var(--sixth-color);
+}

@@ -1,0 +1,9 @@
+.not-found {
+}
+.not-found-content {
+}
+.not-found-content--img {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}

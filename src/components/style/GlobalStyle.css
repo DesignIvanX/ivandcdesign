@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #f5d782;
+  --secondary-color: #ffee93;
+  --tertiary-color: #410101;
+  --quaternary-color: #9b5151;
+  --fifth-color: #2e2e2e;
+  --sixth-color: #ffffff;
+  --seventh-color: #2e2e2e;
+  --other-color: #ffffff;
+}
+[data-theme="dark"] {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --tertiary-color: #9b9b9b;
+  --quaternary-color: #727272;
+  --fifth-color: #ffffff;
+  --sixth-color: #ffffff;
+  --seventh-color: #686868;
+  --other-color: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+/* @KEYFRAMES */
+@keyframes point {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes translate1 {
+  from {
+    transform: translateY(-200%);
+  }
+}
+@keyframes translate2 {
+  from {
+    transform: translateY(200%);
+  }
+}
+@keyframes line {
+  100% {
+    width: 100%;
+  }
+}
+@keyframes bar {
+  0% {
+    width: 0;
+  }
+}
+@keyframes number {
+  100% {
+    margin-top: -70px;
+    opacity: 1;
+  }
+}
+@keyframes delay {
+  100% {
+    transform: translateX(0%);
+    transform: translateY(0%);
+  }
+}
+/* END @KEYFRAMES */

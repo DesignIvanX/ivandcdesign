@@ -1,0 +1,60 @@
+@media screen and (max-width: 1130px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-home ul li {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 65%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 500;
+  }
+  .nav-home ul .toggle {
+    transform: translateX(0%);
+  }
+  .change .line1 {
+    transform: rotate(-50deg) translate(-10px, 8px);
+  }
+  .change .line2 {
+    opacity: 0;
+  }
+  .change .line3 {
+    transform: rotate(50deg) translate(-5px, -5px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .works-content-card-img {
+    height: 40vh;
+    margin: 30px auto 150px auto;
+  }
+  .works-content-card .number-card-works {
+    right: 50%;
+    font-size: 7rem;
+  }
+  .works-content-card > h3 {
+    padding: 50px 0 0 2rem;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+  }
+  .works-content-card a {
+    margin: 20px 0 0 2rem;
+  }
+  .works-content-card p {
+    padding: 0 0 0 2rem;
+    font-size: 1.1rem;
+  }
+  .header {
+  }
+  .header ul div .fas {
+    margin: 5px 10px 0 20px;
+    font-size: 2.5rem;
+  }
+}
