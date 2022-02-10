@@ -3,7 +3,6 @@ import { Link } from "@reach/router";
 import { AiFillHome } from "react-icons/ai";
 import { MdWork } from "react-icons/md";
 import { HiIdentification } from "react-icons/hi";
-// import { BsNutFill } from "react-icons/bs";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
