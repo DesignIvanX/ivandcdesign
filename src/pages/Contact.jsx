@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { navigate } from "@reach/router";
 import axios from "axios";
 import "./style/Contact.css";
 const Contact = () => {
@@ -9,9 +10,14 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
-  const handleOnClick = (e) => {
+  const handleOnSubmit = (e) => {
+    const modal = document.querySelector(".modal");
     e.preventDefault();
-    axios.post("http://localhost:3001/api/form", data);
+    axios.post("https://email-ivandcdesign.herokuapp.com/api/form", data);
+    modal.classList.add("block");
+    setTimeout(() => {
+      navigate("/");
+    }, 2500);
   };
   return (
     <main className="main">
@@ -43,7 +49,7 @@ const Contact = () => {
               <span className="poin">.</span>
               <span className="poin">.</span>
             </h2>
-            <form className="form">
+            <form className="form" onSubmit={handleOnSubmit}>
               <label className="label">Name</label>
               <input
                 type="text"
@@ -82,17 +88,18 @@ const Contact = () => {
                 required
                 onChange={handleOnChange}
               ></textarea>
-              <button
-                onClick={handleOnClick}
-                className="btn-form"
-                type="submit"
-              >
+              <button className="btn-form" type="submit">
                 SEND
               </button>
             </form>
           </div>
         </div>
       </section>
+      <div className="modal">
+        Success<span className="poin">.</span>
+        <span className="poin">.</span>
+        <span className="poin">.</span>
+      </div>
     </main>
   );
 };

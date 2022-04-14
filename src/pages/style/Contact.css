@@ -109,3 +109,24 @@
   color: var(--sixth-color);
   background-color: transparent;
 }
+.modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--sixth-color);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.block {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
