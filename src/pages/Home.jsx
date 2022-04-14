@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "@reach/router";
+import Cv from "../static/cv/cv.pdf";
 import "./style/Home.css";
 const Home = () => {
   // const handleClickHamburger = () => {
@@ -60,6 +61,9 @@ const Home = () => {
           <Link to="/contact" onClick={loadingRemove}>
             About Me
           </Link>
+          <a href={Cv} download="cv.png">
+            Download Cv
+          </a>
         </div>
         <Link to="/works" onClick={loadingRemove} className="btn-home-works">
           Works<i className="fas fa-arrow-down"></i>

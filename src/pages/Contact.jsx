@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./style/Contact.css";
 const Contact = () => {
+  const [data, setData] = useState({});
+  const handleOnChange = (e) => {
+    setData({
+      ...data,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleOnClick = (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:3001/api/form", data);
+  };
   return (
     <main className="main">
       <section className="contact-section">
@@ -9,14 +21,11 @@ const Contact = () => {
             <h2>ABOUT ME</h2>
             <h3>Front-end and Back-end developer.</h3>
             <p>
-              I'm Iván Del Campo, i have 18 year old Spanish freelance front-end
-              and back-end developer. I am a boy who he likes to learn more and
-              more about technologies of any kind. I like to solve design
-              problems,creating a user interface, developing rich web
-              experiences and web applications. When I'm not working or playing
-              with the code, I do what I like ... I do calisthenics, I relax By
-              doing some activity, I try to learn to play instruments and keep
-              learning about life.
+              I'm Iván Del Campo, 2 years being a self-taught front-end and
+              back-end developer and freelancer. I am a guy who likes to learn
+              more and more about technologies of any kind. I like to solve
+              design problems, create a user interface, develop rich web
+              experiences and web applications.
             </p>
             <div>
               <h4>Steve Jobs</h4>
@@ -34,15 +43,26 @@ const Contact = () => {
               <span className="poin">.</span>
               <span className="poin">.</span>
             </h2>
-            <form className="form" action="gmail.php" method="POST">
-              <label className="label">Last Name</label>
+            <form className="form">
+              <label className="label">Name</label>
               <input
                 type="text"
-                name="last-name"
-                className="last-name"
+                name="name"
+                className="name"
                 id="last-name"
-                placeholder="Last Name"
+                placeholder="Name"
                 required
+                onChange={handleOnChange}
+              />
+              <label className="label">Email</label>
+              <input
+                type="email"
+                name="email"
+                className="email"
+                id="email"
+                placeholder="Email"
+                required
+                onChange={handleOnChange}
               />
               <label className="label">Subject</label>
               <input
@@ -52,6 +72,7 @@ const Contact = () => {
                 id="subject"
                 placeholder="Subject"
                 required
+                onChange={handleOnChange}
               />
               <label className="label">Message</label>
               <textarea
@@ -59,8 +80,13 @@ const Contact = () => {
                 id="message"
                 placeholder="¿What service you wanna?"
                 required
+                onChange={handleOnChange}
               ></textarea>
-              <button className="btn-form" type="submit">
+              <button
+                onClick={handleOnClick}
+                className="btn-form"
+                type="submit"
+              >
                 SEND
               </button>
             </form>
