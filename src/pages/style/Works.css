@@ -39,10 +39,6 @@
   animation-delay: 1s;
 }
 .works-content-card-img:nth-child(1) {
-  background-image: url(../../static/works/CALCULATOR.PNG);
-  transform: translateX(100%);
-}
-.works-content-card-img:nth-child(2) {
   background-image: url(../../static/works/POKEMON.PNG);
   transform: translateX(-100%);
 }
