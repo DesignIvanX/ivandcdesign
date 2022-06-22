@@ -12,7 +12,7 @@ const Works = () => {
             <div className="works-content-card-img">
               <div className="effect-hover"></div>
               <div className="works-content-card">
-                <h2 className="number-card-works">02</h2>
+                <h2 className="number-card-works">01</h2>
                 <h3>POKEDEX</h3>
                 <p>pokedex with ReactJs</p>
                 <a
