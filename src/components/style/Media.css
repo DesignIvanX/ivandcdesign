@@ -32,7 +32,7 @@
 }
 @media screen and (max-width: 760px) {
   .works-content-card-img {
-    height: 40vh;
+    height: 350px;
     margin: 30px auto 150px auto;
   }
   .works-content-card .number-card-works {
