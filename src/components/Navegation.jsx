@@ -43,15 +43,6 @@ const Navegation = () => {
   };
   return (
     <div>
-      <div className="lazy-loading-content">
-        <div className="loadingio-spinner-pulse-yyczceyun6e">
-          <div className="ldio-vbx0wyzhpxm">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
       <header className="header">
         <ul>
           <Link to="/" className="header-link" onClick={loadingRemove}>

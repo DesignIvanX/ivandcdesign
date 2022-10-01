@@ -8,15 +8,15 @@ const Loading = () => {
     }, 1000);
   });
   return (
-    <div className="lazy-loading-content">
-      <div className="loadingio-spinner-pulse-yyczceyun6e">
-        <div className="ldio-vbx0wyzhpxm">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div className="lazy-loading-content">
+        <div className="loadingio-spinner-pulse-yyczceyun6e">
+          <div className="ldio-vbx0wyzhpxm">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 

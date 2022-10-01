@@ -1,11 +1,12 @@
 /* LOADING */
-@keyframes lazy-load {
-  100% {
-    transform: translateX(100%);
-  }
-}
+
 .lazy-loading-content {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -15,7 +16,12 @@
   z-index: 1000000;
 }
 .lazy {
-  animation: lazy-load 900ms linear forwards;
+  animation: lazy-load 1s linear forwards;
+}
+@keyframes lazy-load {
+  100% {
+    transform: translateX(100%);
+  }
 }
 @keyframes ldio-vbx0wyzhpxm-1 {
   0% {
